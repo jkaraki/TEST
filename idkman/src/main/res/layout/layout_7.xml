@@ -8,8 +8,8 @@
         android:layout_gravity="left|top"
         android:background="#456768"/>
     <TextView
-        android:layout_width="91dp"
-        android:layout_height="78dp"
+        android:layout_width="117dp"
+        android:layout_height="97dp"
         android:text="Bah"
         android:id="@+id/textView8"
         android:layout_gravity="left|top" android:background="#000000" />
