@@ -5,28 +5,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:background="#187400"
         android:id="@+id/button10"
         android:layout_gravity="left|top" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:background="#742b00"
         android:id="@+id/button11"
         android:layout_gravity="right|top" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:background="#580174"
         android:id="@+id/button19"
         android:layout_gravity="left|bottom" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:background="#727406"
         android:id="@+id/button20"
         android:layout_gravity="right|bottom" />
 </FrameLayout>

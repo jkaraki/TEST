@@ -9,28 +9,61 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 //hey everyone
 
 public class MainActivity extends AppCompatActivity {
+    int br;
+    int bl;
+    int tr;
+    int tl;
 
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout);
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.layout_day3_2);
+        Button button1 = (Button) findViewById(R.id.button10);
+        button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Button Pressed", Toast.LENGTH_SHORT).show();
+                tl++;
+                Toast.makeText(MainActivity.this, String.valueOf(tl), Toast.LENGTH_SHORT).show();
+                Log.i("onCreate", "Top Left Pressed");
+                Log.i("onCreate", String.valueOf(tl));
+
             }
         });
-        TextView textView = (TextView) findViewById(R.id.textView16);
-        textView.setOnClickListener(new View.OnClickListener() {
+        Button button2 = (Button) findViewById(R.id.button11);
+        button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "TextView Pressed", Toast.LENGTH_SHORT).show();
-                Log.i("onCreate", "TextViewPressed");
+                tr++;
+                Toast.makeText(MainActivity.this, String.valueOf(tr), Toast.LENGTH_SHORT).show();
+                Log.i("onCreate", "Top Right Pressed");
+                Log.i("onCreate", String.valueOf(tr));
             }
         });
+        Button button3 = (Button) findViewById(R.id.button19);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                bl++;
+                Toast.makeText(MainActivity.this, String.valueOf(bl), Toast.LENGTH_SHORT).show();
+                Log.i("onCreate", "Bottom Left Pressed");
+                Log.i("onCreate", String.valueOf(bl));
+
+
+            }
+        });
+        Button button4 = (Button) findViewById(R.id.button20);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                br++;
+                Toast.makeText(MainActivity.this, String.valueOf(br), Toast.LENGTH_SHORT).show();
+                Log.i("onCreate", "Bottom Right Pressed");
+                Log.i("onCreate", String.valueOf(br));
+
+            }
+        });
+
     }
 
     @Override
