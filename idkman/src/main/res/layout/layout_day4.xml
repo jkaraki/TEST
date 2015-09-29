@@ -6,7 +6,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
         android:id="@+id/button21"
         android:layout_gravity="left|top" />
 
@@ -33,5 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button25"
+        android:text="RESET"
         android:layout_gravity="center" />
 </FrameLayout>
+
