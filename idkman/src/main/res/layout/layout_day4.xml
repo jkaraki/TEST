@@ -7,11 +7,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button21"
+        android:background="#764590"
         android:layout_gravity="left|top" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#0b9000"
 
         android:id="@+id/button22"
         android:layout_gravity="right|top" />
@@ -20,12 +22,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button23"
+        android:background="#903b0f"
+
         android:layout_gravity="left|bottom" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button24"
+        android:background="#355a90"
+
         android:layout_gravity="right|bottom" />
 
     <Button

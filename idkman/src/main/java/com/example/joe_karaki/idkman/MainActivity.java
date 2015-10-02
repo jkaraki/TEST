@@ -99,6 +99,11 @@ public class MainActivity extends AppCompatActivity {
                 editor.putInt("tr", 0);
                 editor.putInt("bl", 0);
                 editor.putInt("br", 0);
+                tl=0;
+                tr=0;
+                br=0;
+                bl=0;
+
 
                 editor.commit();
 
