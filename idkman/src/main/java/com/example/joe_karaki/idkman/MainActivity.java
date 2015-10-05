@@ -17,18 +17,23 @@ import android.widget.Toast;
 //hey everyone
 
 public class MainActivity extends AppCompatActivity {
+
     int bl;
     int br;
-    int tr;
     int tl;
-
-
+    int tr;
 
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences mSettings = MainActivity.this.getSharedPreferences("Settings", 0);
+         bl =  mSettings.getInt("bl", 0)  ;
+         br =  mSettings.getInt("br", 0)  ;
+         tr =  mSettings.getInt("tr", 0)  ;
+         tl =  mSettings.getInt("tl", 0)  ;
+
         setContentView(R.layout.layout_day4);
         Button button1 = (Button) findViewById(R.id.button21);
         button1.setOnClickListener(new View.OnClickListener() {
